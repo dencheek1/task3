@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gems 		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xmlns="http://www.example.org/gems"
+			xsi:schemaLocation="http://www.example.org/gemes gems.xsd">
+	<gem id="i1">
+		<name>1592</name>
+		<origin>USA</origin>
+		<preciousness>PRECIOUS</preciousness>
+		<visualParametrs>
+			<color>RED</color>
+			<opacity>15</opacity>
+			<face>15</face>
+		</visualParametrs>
+		<value>0.92</value>
+	</gem>
+	<gem id="i2">
+		<name>1592</name>
+		<origin>USA</origin>
+		<preciousness>PRECIOUS</preciousness>
+		<visualParametrs>
+			<color>RED</color>
+			<opacity>15</opacity>
+			<face>13</face>
+		</visualParametrs>
+		<value>3.92</value>
+	</gem>
+	<gem id="i3">
+		<name>1592</name>
+		<origin>USA</origin>
+		<preciousness>PRECIOUS</preciousness>
+		<visualParametrs>
+			<color>RED</color>
+			<opacity>1</opacity>
+		</visualParametrs>
+		<value>2.92</value>
+	</gem>
+</gems>
+

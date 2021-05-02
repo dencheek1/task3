@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+		targetNamespace="http://www.example.org/gems" 
+		xmlns:tns="http://www.example.org/gems" 
+		elementFormDefault="qualified">
+	<element name="gems">
+		<complexType>
+			<sequence>
+				<element name="gem" maxOccurs="unbounded">
+					<complexType>
+						<sequence>
+							<element name="name" type="string" />
+							<element name="origin" type="string" />
+							<element name="preciousness">
+								<simpleType>
+									<restriction base="string">
+										<enumeration value="PRECIOUS" />
+										<enumeration value="SEMIPRECIOUS" />
+									</restriction>
+								</simpleType>
+							</element>	
+							<element name="visualParametrs">
+								<complexType>
+									<sequence>
+										<element name="color">
+											<simpleType>
+												<restriction base="string">
+													<enumeration value="RED" />
+													<enumeration value="GREEN" />
+													<enumeration value="BLACK" />
+													<enumeration value="YELLOW" />
+													<enumeration value="ORANGE" />
+													<enumeration value="WHITE" />
+													<enumeration value="PINK" />
+												</restriction>
+											</simpleType>
+										</element>
+										<element name="opacity">
+											<simpleType>
+												<restriction base="double">
+													<minInclusive value="0" />
+													<maxInclusive value="100" />
+												</restriction>
+											</simpleType>
+										</element>
+										<element name="face" minOccurs="0">
+											<simpleType>
+												<restriction base="integer">
+													<minInclusive value="4"></minInclusive>
+													<maxInclusive value="15"></maxInclusive>
+												</restriction>
+											</simpleType>
+										</element>
+									</sequence>
+								</complexType>
+							</element>
+							<element name="value" type="double" />			
+						</sequence>
+						<attribute name="id" type="ID" use="required" />
+					</complexType>
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+</schema>
